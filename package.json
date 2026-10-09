@@ -1,0 +1,27 @@
+{
+  "name": "mockjs-completion",
+  "displayName": "Mock.js Completion",
+  "description": "Mock.js placeholder completion in VS Code for workspace-root mocks/**/*.json files.",
+  "version": "0.0.2",
+  "publisher": "bianliuzhu",
+  "icon": "icon.png",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:json",
+    "onLanguage:jsonc"
+  ],
+  "main": "./src/extension.cjs",
+  "scripts": {
+    "test": "node --test test/*.test.cjs"
+  },
+  "dependencies": {
+    "jsonc-parser": "3.3.1"
+  }
+}
